@@ -10,13 +10,14 @@
 </head>
 <body>
     <div class="container">
+      <h1 class="pt-5 text-center">Calculator</h1>
         <div class="calculator mt-5">
-          <div class="display" id="display">0</div>
+          <input type="text" class="display" id="result">
           <div class="buttons">
             <div class="row p-3">
-                <div class="col"><div class="button btn btn-warning operation p-3" onclick="addToDisplay()">C</div></div>
-                <div class="col"><div class="button btn btn-warning operation p-3"  onclick="addToDisplay()">DL</div></div>
-                <div class="col"><div class="button btn btn-warning operation p-3" onclick="addToDisplay()">%</div></div>
+                <div class="col"><div class="button btn btn-warning operation p-3" onclick="clearAll('')">C</div></div>
+                <div class="col"><div class="button btn btn-warning operation p-3"  onclick="clearAll('DL')">DL</div></div>
+                <div class="col"><div class="button btn btn-warning operation p-3" onclick="addToDisplay('%')">%</div></div>
                 <div class="col"><div class="button btn btn-warning operation p-3" onclick="addToDisplay('+')">+</div></div>
               </div>
             <div class="row p-3">
@@ -47,4 +48,5 @@
         </div>
       </div>
 </body>
+<script src="./calclulator.js"></script>
 </html>
